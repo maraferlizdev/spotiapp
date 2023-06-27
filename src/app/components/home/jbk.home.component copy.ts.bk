@@ -1,0 +1,22 @@
+import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html'
+})
+export class HomeComponent {
+  paises: any[] =[]
+  constructor(private http: HttpClient) {
+    console.log('constructor del home hecho');
+    this.http.get('https://restcountries.com/v3.1/lang/spanish').subscribe((respPaises:any)=>{
+      this.paises=respPaises;
+      console.log(respPaises);
+      
+    })
+    
+   
+
+  }
+
+}
