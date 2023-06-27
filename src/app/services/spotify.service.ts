@@ -2,7 +2,7 @@ import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 
-
+//ng build --output-path docs --base-href /spotiapp/
 @Injectable({
   providedIn: 'root'
 })
