@@ -14,7 +14,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 ```
-ng build --output-path docs --base-href /loginapp/
+ng build --output-path docs --base-href /spotyapp/
 ```
 ## Running unit tests
 
